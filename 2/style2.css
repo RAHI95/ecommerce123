@@ -1,0 +1,168 @@
+/*
+    DEMO STYLE
+*/
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f9f9f9;
+}
+.test{
+    visibility: collapse;
+}
+b{
+    font-size: 2rem;
+}
+.card-text{
+    color: #000;
+}
+.card-text:hover{
+    color: red;
+}
+p {
+    font-family: 'Poppins', sans-serif;
+    /*font-size: 1.1em;*/
+    /*font-weight: 300;*/
+    /*line-height: 1.7em;*/
+    color: #999;
+}
+.dropdown-menu{
+    width: 18rem;
+}
+#dropdown{
+width: 18rem;
+    background-color: white;
+}
+.dropdown-item{
+    border-bottom: 1px dashed black;
+}
+
+/*a,*/
+/*a:hover,*/
+/*a:focus {*/
+/*    color: inherit;*/
+/*    text-decoration: none;*/
+/*    transition: all 0.3s;*/
+/*}*/
+
+.navbar {
+    background: #fff;
+
+}
+.down-nav{
+
+    height: 4rem;
+}
+.input-group{
+    width: 50%;
+
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+.sidenav2 {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: greenyellow;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    margin-top: 6rem;
+}
+
+.sidenav2 a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav2 a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav2 .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+/* equal card height */
+.row-equal > div[class*='col-'] {
+    display: flex;
+    flex: 1 0 auto;
+}
+
+.row-equal .card {
+    width: 100%;
+}
+
+/* ensure equal card height inside carousel */
+.carousel-inner>.row-equal.active,
+.carousel-inner>.row-equal.next,
+.carousel-inner>.row-equal.prev {
+    display: flex;
+}
+
+/* prevent flicker during transition */
+.carousel-inner>.row-equal.active.left,
+.carousel-inner>.row-equal.active.right {
+    opacity: 0.5;
+    display: flex;
+}
+
+
+/* control image height */
+.card-img-top-250 {
+    max-height: 250px;
+    overflow:hidden;
+}
+
+
+.card-header{color:dodgerblue}
+@media screen and (max-height: 450px) {
+    .sidenav2 {padding-top: 15px;}
+    .sidenav2 a {font-size: 18px;}
+}
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #content {
+        width: 100%;
+    }
+    #content.active {
+        width: calc(100% - 250px);
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
